@@ -27,6 +27,8 @@ Real-time updates using Supabase APIs
 EduVerse Backend ensures a robust and scalable data flow between all components of the learning system.
 
 🧩 Main Features
+
+
 🔐 1. Authentication
 
 
@@ -150,19 +152,7 @@ Create a .env.local file in your backend or root directory:
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-3️⃣ Database Schema
-🧍‍♂️ users
-ColumnTypeDescriptionidUUIDUnique user IDnameTextFull nameemailTextUser emailroleTextstudent/instructorcreated_atTimestampRegistration date
-🎓 courses
-ColumnTypeDescriptionidUUIDCourse IDtitleTextCourse namedescriptionTextCourse summaryinstructor_idUUIDLinked to users.idcategoryTextSubjectcreated_atTimestampCreation date
-🎥 lessons
-ColumnTypeDescriptionidUUIDLesson IDcourse_idUUIDLinked to courses.idtitleTextLesson titlevideo_urlTextSupabase video linkdurationIntegerVideo length in minutes
-🧠 quizzes
-ColumnTypeDescriptionidUUIDQuiz IDcourse_idUUIDLinked to courses.idquestionTextQuiz questionoptionsJSONMultiple choicescorrect_answerTextCorrect option
-📊 progress
-ColumnTypeDescriptionidUUIDProgress IDuser_idUUIDLinked to users.idcourse_idUUIDLinked to courses.idcompleted_percentIntegerCompletion percentage
-🪪 certificates
-ColumnTypeDescriptionidUUIDCertificate IDuser_idUUIDLinked to users.idcourse_idUUIDLinked to courses.idfile_urlTextCertificate download linkissued_atTimestampIssue date
+
 
 🎬 Supabase Storage Setup
 
@@ -199,28 +189,6 @@ Watching lessons and submitting quizzes updates progress.
 
 
 When course = 100% complete → certificate is generated.
-
-
-
-📈 Admin (Optional Extension)
-
-
-Manage users and instructors.
-
-
-View overall analytics:
-
-
-Active students
-
-
-Course completion rate
-
-
-Total content uploaded
-
-
-
 
 
 🚀 Deployment
