@@ -128,12 +128,6 @@ Course performance
 Quiz averages and student engagement
 
 
-
-
-
-🛠️ Tech Stack
-ComponentTechnologyDatabaseSupabase (PostgreSQL)AuthenticationSupabase AuthStorageSupabase StorageAPIsSupabase SDK / REST APIsOptional ServerNode.js + ExpressDeploymentSupabase Cloud / Vercel Edge Functions
-
 ⚙️ Setup Instructions
 1️⃣ Create a Supabase Project
 
